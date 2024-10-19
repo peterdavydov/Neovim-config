@@ -9,7 +9,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
     { "navarasu/onedark.nvim" },
     { "nvim-treesitter/nvim-treesitter" },
     {
