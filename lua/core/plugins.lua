@@ -32,13 +32,4 @@ require("lazy").setup({
     { "neovim/nvim-lspconfig" },
     { "hrsh7th/cmp-nvim-lsp" }, { "hrsh7th/cmp-buffer" }, { "hrsh7th/cmp-path" }, { "hrsh7th/cmp-cmdline" }, { "hrsh7th/nvim-cmp" },
     { "hrsh7th/cmp-vsnip" }, { "hrsh7th/vim-vsnip" },
-    {
-        "iamcco/markdown-preview.nvim",
-        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
-        build = "cd app && yarn install",
-        init = function()
-            vim.g.mkdp_filetypes = { "markdown" }
-        end,
-        ft = { "markdown" },
-    },
 })
